@@ -5,6 +5,7 @@ but wanted to do it again as a refresher AND to incorporate;
 
 Bootstrap
 Responsive Web Design
+Font Awesome
 
 ...along with;  
 HTML
