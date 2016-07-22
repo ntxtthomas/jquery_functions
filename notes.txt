@@ -1,0 +1,10 @@
+TECHNOLOGIES
+- [x] HTML/CSS
+- [x] Git/Github
+- [x] Bootstrap
+- [ ] JavaScript
+- [x] jQuery
+- [ ] jQuery UI
+- [ ] AJAX
+
+

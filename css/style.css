@@ -1,0 +1,35 @@
+.container-fluid {
+	width: 100%;
+	margin: 3rem;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.api {
+	border: 2px solid lightgrey;
+	border-radius: 1.5rem; 
+	height: 20rem; 
+}
+.dance {
+	width: 15%;
+	margin-top: 1rem; 
+
+}
+button {
+	float: right;
+	margin: 80% 10% 10% 80%;
+}
+.horse {
+	width: 30%;
+	margin-top: 1rem; 
+}
+#in, #out {
+	display: block;
+	float: left; 
+	margin: 5px;
+	text-align: center;
+	width: 50px; 
+	height: 50px;
+	border-radius: 45px;
+	clear: both;
+}

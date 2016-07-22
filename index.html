@@ -1,0 +1,129 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description"  content="Examples of jQuery API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Functions</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<h2>jQuery Function Examples</h2>
+
+		<div class="effects jq row">
+		<h4>Effects (functions to do some cool animation effects)</h4>
+			<div class="api show col-xs-4 col-sm-4 col-md-4">
+				<p>.show( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api toggle col-xs-4 col-sm-4 col-md-4">
+				<p>.toggle( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api slideDown col-xs-4 col-sm-4 col-md-4">
+				<p>.slideDown( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<p>.slideToggle( )</p>
+				<p>example: $('.dancer').slideToggle( );</p>
+				<img class="dance" src="img/dance.gif" alt="dance">
+				<button class="btn btn-primary" id="dancer" type="button">Action</button>
+			</div>
+			<div class="api slideUp col-xs-4 col-sm-4 col-md-4">
+				<p>.slideUp( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<p>.fadeIn( ) / .fadeOut( )</p>
+				<p>example: $(".horse").fadeIn("slow"); / $(".horse").fadeOut("slow")</p>
+				<img src="img/horse_races.gif" alt="horse" class="horse">
+				<button class="btn btn-success" id="in" type="button">In</button>
+				<button class="btn btn-danger" id="out" type="button">Out</button>
+			</div>
+		</div>
+
+
+
+		<div class="css jq row">
+		<h4>CSS (adding or r col-xs- col-sm- col-md-removing a class for any HTML element/DOM)</h4>
+			<div class="api addClass col-xs-4 col-sm-4 col-md-4">
+				<p>.addClass( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api removeClass col-xs-4 col-sm-4 col-md-4">
+				<p>.removeClass( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api css col-xs-4 col-sm-4 col-md-4">
+				<p>.css( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+		</div>
+
+
+		<div class="manipulation jq row">
+		<h4>Manipulation (retrieving or setting value or text in any HTML element)</h4>
+			<div class="api after col-xs-4 col-sm-4 col-md-4">
+				<p>.after( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api append col-xs-4 col-sm-4 col-md-4">
+				<p>.append( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api prepend col-xs-4 col-sm-4 col-md-4">
+				<p>.prepend( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api attr col-xs-4 col-sm-4 col-md-4">
+				<p>.attr( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api before col-xs-4 col-sm-4 col-md-4">
+				<p>.before( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api html col-xs-4 col-sm-4 col-md-4">
+				<p>.html( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api text col-xs-4 col-sm-4 col-md-4">
+				<p>.text( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api val col-xs-4 col-sm-4 col-md-4">
+				<p>.val( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+		</div>
+
+
+		<div class="events jq row">
+		<h4>Events (functions to handle an event)</h4>
+			<div class="api click col-xs-4 col-sm-4 col-md-4">
+				<p>.click( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api on col-xs-4 col-sm-4 col-md-4">
+				<p>.on( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api live col-xs-4 col-sm-4 col-md-4">
+				<p>.live( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+			<div class="api hover col-xs-4 col-sm-4 col-md-4">
+				<p>.hover( )</p>
+				<button class="btn btn-primary" type="button">Action</button>
+			</div>
+		</div>
+		
+	</div><!--end of container-fluid div-->
+
+
+</body>
+</html>
