@@ -24,7 +24,7 @@ $(document).ready(function(){
 		$(".ham").removeClass();
 	})
 	$("#bacon").click(function(){
-		$(".bacon").addClass(".ham");
+		$(".wacko span").addClass(".ham");
 	})
 	
 
