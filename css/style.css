@@ -1,13 +1,42 @@
+/** {border: 1px solid red; }*/
 .container-fluid {
 	width: 100%;
-	margin: 3rem;
+	margin-top: 135px;
+}
+
+.navbar h2 {
+	float: left;
+	clear: both;
+	margin-left: 50px; 
+	margin-top: 35px;
+	width: 55rem;
+}
+	.navbar h2, .navbar ul {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.navbar ul {
+		text-decoration: none;
+		float: right;
+		clear: both;		
+		margin-right: 50px;
+		margin-top: -35px;
+	}
+	.navbar li {
+		display: inline;
+		margin-right: 1rem;
+	}
+	.navbar li:hover {
+		font-weight: 600;
+	}
+h4 {
 	text-align: center;
-	padding-left: 30px;
-	padding-right: 30px;
+	background: lightgrey;
 }
 .api {
 	border: 2px solid lightgrey;
 	border-radius: 1.5rem; 
+	text-align: center;
 	height: 20rem; 
 }
 .dance {
@@ -19,11 +48,11 @@ button {
 	float: right;
 	margin: 80% 10% 10% 80%;
 }
-.horse {
+.horse, .butterfly {
 	width: 30%;
 	margin-top: 1rem; 
 }
-#in, #out {
+#in, #out, #up, #down {
 	display: block;
 	float: left; 
 	margin: 5px;
@@ -33,3 +62,36 @@ button {
 	border-radius: 45px;
 	clear: both;
 }
+.up, .down {
+	width: 35%;
+	margin-top: 5px;
+}
+.ham {
+	font-weight: 600;
+	color: green; 
+}
+.bacBox{
+	width: 35%; 
+	height: 125px; 
+	padding: 0 auto;
+	border: 1px solid red; 
+}
+#ham, #bacon {
+	display: inline-block;
+	/*vertical-align: top; */
+	width: 25%;
+	margin: 5px;  
+	border: 1px solid blue; 
+}
+.baco, .wacko {
+	width: 45%;
+	text-align: justify;
+	border: 1px solid red; 
+
+}
+.baco, .bacBox {
+	display: inline-block;
+	vertical-align: top;
+}
+
+

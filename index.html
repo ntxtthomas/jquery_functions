@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -5,15 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>jQuery Functions</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://use.fontawesome.com/19199cf98b.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="js/app.js"></script>
-	
 </head>
 <body>
-	<div class="container-fluid">
-		<h2>jQuery Function Examples</h2>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<h2>jQuery Function Examples</h2>
+			<ul>
+				<li><a href="#effects">Effects</a></li>
+				<li>|</li>
+				<li><a href="#css">CSS</a></li>
+				<li>|</li>
+				<li><a href="#manipluation">Manipulation</a></li>
+				<li>|</li>
+				<li><a href="#events">Events</a></li>
+			</ul>
 
-		<div class="effects jq row">
+		</div>
+	<div class="container-fluid">
+		<div class="jq row" id="effects">
 		<h4>Effects (functions to do some cool animation effects)</h4>
 			<div class="api show col-xs-4 col-sm-4 col-md-4">
 				<p>.show( )</p>
@@ -33,10 +45,6 @@
 				<img class="dance" src="img/dance.gif" alt="dance">
 				<button class="btn btn-primary" id="dancer" type="button">Action</button>
 			</div>
-			<div class="api slideUp col-xs-4 col-sm-4 col-md-4">
-				<p>.slideUp( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
-			</div>
 			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<p>.fadeIn( ) / .fadeOut( )</p>
 				<p>example: $(".horse").fadeIn("slow"); / $(".horse").fadeOut("slow")</p>
@@ -44,19 +52,34 @@
 				<button class="btn btn-success" id="in" type="button">In</button>
 				<button class="btn btn-danger" id="out" type="button">Out</button>
 			</div>
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<p>.slideUp( ) / .slideDown( )</p>
+				<button type="button" class="btn btn-link" id="reset">Reset</button>
+				<img src="img/up.png" alt="up" class="up">
+				<button class="btn btn-info" id="up" type="button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+				<img src="img/down.png" alt="down" class="down">
+				<button class="btn btn-warning" id="down" type="button"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+			</div>
 		</div>
 
 
 
-		<div class="css jq row">
+		<div class="jq row" id="css">
 		<h4>CSS (adding or r col-xs- col-sm- col-md-removing a class for any HTML element/DOM)</h4>
 			<div class="api addClass col-xs-4 col-sm-4 col-md-4">
 				<p>.addClass( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+				<p class="wacko">Ham ground round alcatra jerky rump. <span>Kevin frankfurter bresaola pancetta short ribs cow prosciutto sirloin salami landjaeger tri-tip. Venison jerky meatball capicola turducken swine.</span></p>
+				<div class="wackoBox">
+					<button class="btn btn-primary" type="button" id="bacon">B</button>
+				</div>
 			</div>
-			<div class="api removeClass col-xs-4 col-sm-4 col-md-4">
+			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<p>.removeClass( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+				<p class="baco">Ham ground round alcatra jerky rump. <span class="ham">Kevin frankfurter bresaola pancetta short ribs cow prosciutto sirloin salami landjaeger tri-tip. Venison jerky meatball capicola turducken swine.</span></p>
+				<div class="bacBox">
+					<button class="btn btn-primary" type="button" id="ham">H</button>
+				</div>
+				
 			</div>
 			<div class="api css col-xs-4 col-sm-4 col-md-4">
 				<p>.css( )</p>
@@ -65,7 +88,7 @@
 		</div>
 
 
-		<div class="manipulation jq row">
+		<div class="jq row" id="manipulation">
 		<h4>Manipulation (retrieving or setting value or text in any HTML element)</h4>
 			<div class="api after col-xs-4 col-sm-4 col-md-4">
 				<p>.after( )</p>
@@ -102,7 +125,7 @@
 		</div>
 
 
-		<div class="events jq row">
+		<div class="jq row" id="events">
 		<h4>Events (functions to handle an event)</h4>
 			<div class="api click col-xs-4 col-sm-4 col-md-4">
 				<p>.click( )</p>
@@ -123,7 +146,5 @@
 		</div>
 		
 	</div><!--end of container-fluid div-->
-
-
 </body>
 </html>
