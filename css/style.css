@@ -48,11 +48,21 @@ button {
 	float: right;
 	margin: 80% 10% 10% 80%;
 }
-.horse, .butterfly {
+.horse {
 	width: 30%;
 	margin-top: 1rem; 
 }
-#in, #out, #up, #down {
+#in, #out {
+	display: block;
+	float: left; 
+	margin: 1px 5px 5px 5px;
+	text-align: center;
+	width: 50px; 
+	height: 50px;
+	border-radius: 45px;
+	clear: both;
+}
+#up, #down {
 	display: block;
 	float: left; 
 	margin: 5px;
@@ -74,24 +84,51 @@ button {
 	width: 35%; 
 	height: 125px; 
 	padding: 0 auto;
-	border: 1px solid red; 
-}
-#ham, #bacon {
 	display: inline-block;
-	/*vertical-align: top; */
-	width: 25%;
-	margin: 5px;  
-	border: 1px solid blue; 
+	vertical-align: top;
 }
 .baco, .wacko {
 	width: 45%;
 	text-align: justify;
-	border: 1px solid red; 
-
-}
-.baco, .bacBox {
 	display: inline-block;
 	vertical-align: top;
 }
+.wackoBox, #after {
+	width: 35%; 
+	height: 125px; 
+	padding: 0 auto;
+	display: inline-block;
+	vertical-align: top; 
+}
+#ham, #bacon {
+	width: 55%;
+	margin: 5px;  
+}
+.pig {
+	color: red;
+	font-weight: 900; 
+}
+.round {
+	width: 100px; 
+	height: 100px; 
+	border-radius: 55px;
+	margin-top: 1rem; 
+	background-color: blue; 
+	display: inline-block;
+	vertical-align: top; 
+}
+.question{
+	width: 45%; 
+	height: 30%;
+	display: inline-block;
+	vertical-align: top;  
+}
+.answer {
+	width: 45%; 
+	height: 30%;
+	display: inline-block;
+	vertical-align: top;  
+}
+
 
 

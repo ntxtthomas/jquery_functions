@@ -20,12 +20,23 @@ $(document).ready(function(){
 		$(".up").slideDown("fast");
 		$(".down").slideDown("fast");
 	})
+	$("#bacon").click(function(){
+		$(".bacon").addClass("pig");
+	})
 	$("#ham").click(function(){
 		$(".ham").removeClass();
 	})
-	$("#bacon").click(function(){
-		$(".wacko span").addClass(".ham");
+	$("#change").click(function(){
+		var round = $(".round").css("background-color", "red");
+		round.hide().show()
+		round.queue(function(){
+			round.css("background-color", "green")
+		})
 	})
+	$("#after").click(function(){
+		$(".question").after("<p class='answer'>Because most don't C#</p>");
+	})
+	
 	
 
 });
