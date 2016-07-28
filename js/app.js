@@ -36,6 +36,9 @@ $(document).ready(function(){
 	$("#after").click(function(){
 		$(".question").after("<p class='answer'>Because most don't C#</p>");
 	})
+	$("#append").click(function(){
+		$(".magic").append("BLUE").css("color", "blue");
+	})
 	
 	
 

@@ -1,37 +1,9 @@
 /** {border: 1px solid red; }*/
 .container-fluid {
 	width: 100%;
-	margin-top: 135px;
 }
-
-.navbar h2 {
-	float: left;
-	clear: both;
-	margin-left: 50px; 
-	margin-top: 35px;
-	width: 55rem;
-}
-	.navbar h2, .navbar ul {
-		display: inline-block;
-		vertical-align: top;
-	}
-	.navbar ul {
-		text-decoration: none;
-		float: right;
-		clear: both;		
-		margin-right: 50px;
-		margin-top: -35px;
-	}
-	.navbar li {
-		display: inline;
-		margin-right: 1rem;
-	}
-	.navbar li:hover {
-		font-weight: 600;
-	}
-h4 {
-	text-align: center;
-	background: lightgrey;
+#effects, #css, #manipulation, #events {
+	margin-top: 125px; 
 }
 .api {
 	border: 2px solid lightgrey;
@@ -44,10 +16,10 @@ h4 {
 	margin-top: 1rem; 
 
 }
-button {
+/*button {
 	float: right;
 	margin: 80% 10% 10% 80%;
-}
+}*/
 .horse {
 	width: 30%;
 	margin-top: 1rem; 
@@ -129,6 +101,9 @@ button {
 	display: inline-block;
 	vertical-align: top;  
 }
+/*.magic {
+	font-size: 2rem;
+}*/
 
 
 
