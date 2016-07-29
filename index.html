@@ -7,11 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>jQuery Functions</title>
 	<script src="https://use.fontawesome.com/19199cf98b.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/app.js"></script>
   	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/app.js"></script>
 </head>
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
@@ -39,33 +39,33 @@
 	</div><!--end of navbar div-->
 
 	
-	<div class="container-fluid">
-		<div class="jq row" id="effects">
+	<div class="container">
+		<div class="row" id="effects">
 		<h4>Effects (functions to do some cool animation effects)</h4>
-			<div class="api show col-xs-4 col-sm-4 col-md-4">
-				<p>.show( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
-			</div>
-			<div class="api toggle col-xs-4 col-sm-4 col-md-4">
-				<p>.toggle( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
-			</div>
-			<div class="api slideDown col-xs-4 col-sm-4 col-md-4">
-				<p>.slideDown( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
-			</div>
+		<div class="clickMe">Click Buttons for Action!!</div>
+		<br>
+
 			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<p>.slideToggle( )</p>
-				<p>example: $('.dancer').slideToggle( );</p>
+				<button class="btn btn-primary" type="button">.show( )</button>
+			</div>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button">.toggle( )</button>
+			</div>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button">.slideDown( )</button>
+			</div>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" id="dancer" type="button">.slideToggle( )</button>
 				<img class="dance" src="img/dance.gif" alt="dance">
-				<button class="btn btn-primary" id="dancer" type="button">Action</button>
 			</div>
 			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<p>.fadeIn( ) / .fadeOut( )</p>
-				<p>example: $(".horse").fadeIn("slow"); / $(".horse").fadeOut("slow")</p>
 				<img src="img/horse_races.gif" alt="horse" class="horse">
-				<button class="btn btn-success" id="in" type="button">In</button>
 				<button class="btn btn-danger" id="out" type="button">Out</button>
+				<button class="btn btn-success" id="in" type="button">In</button>
 			</div>
 			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<p>.slideUp( ) / .slideDown( )</p>
@@ -79,89 +79,94 @@
 
 
 
-		<div class="jq row" id="css">
+		<div class="row" id="css">
 		<h4>CSS (adding or r col-xs- col-sm- col-md-removing a class for any HTML element/DOM)</h4>
-			<div class="api addClass col-xs-4 col-sm-4 col-md-4">
-				<p>.addClass( )</p>
-				<p class="wacko">Ham ground round alcatra jerky rump. <span class="bacon">Kevin frankfurter bresaola pancetta short ribs cow prosciutto sirloin salami landjaeger tri-tip. Venison jerky meatball capicola turducken swine.</span></p>
-				<div class="wackoBox">
-					<button class="btn btn-primary" type="button" id="bacon">Add</button>
-				</div>
-			</div>
+		<div class="clickMe">Click Buttons for Action!!</div>
+		<br>
 			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<p>.removeClass( )</p>
-				<p class="baco">Ham ground round alcatra jerky rump. <span class="ham">Kevin frankfurter bresaola pancetta short ribs cow prosciutto sirloin salami landjaeger tri-tip. Venison jerky meatball capicola turducken swine.</span></p>
-				<div class="bacBox">
-					<button class="btn btn-primary" type="button" id="ham">Remove</button>
-				</div>
+				<button class="btn btn-primary" type="button" id="addClass">.addClass( )</button>
+				<p>Ham ground round alcatra jerky rump. <span class="bacon">Kevin frankfurter short ribs prosciutto tri-tip. Venison jerky capicola turducken swine.</span></p>
 			</div>
-			<div class="api css col-xs-4 col-sm-4 col-md-4">
-				<p>.css( )</p>
+
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="removeClass">.removeClass( )</button>
+				<p>Ham ground round alcatra jerky rump. <span class="ham">Kevin frankfurter short ribs prosciutto tri-tip. Venison jerky capicola turducken swine.</span></p>
+			</div>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="change">.css( )</button>
 				<div class="round"></div>
-				<button class="btn btn-primary" type="button" id="change">Action</button>
 			</div>
-		</div>
+
+		</div><!--end of #css div-->
 
 
-		<div class="jq row" id="manipulation">
+		<div class="row" id="manipulation">
 		<h4>Manipulation (retrieving or setting value or text in any HTML element)</h4>
-			<div class="api after col-xs-4 col-sm-4 col-md-4">
-				<p>.after( )</p>
+		<div class="clickMe">Click Buttons for Action!!</div>
+		<br>
+			
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="after">.after( )</button>
 				<p class="question">Why do most Java developers wear glasses?</p>
-				<div id="after">
-					<button class="btn btn-primary" type="button">Action</button>
-				</div>
 			</div>
-			<div class="api append col-xs-4 col-sm-4 col-md-4">
-				<p>.append( )</p>
+
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="append">.append( )</button>
 				<p class="magic">The magic color is:</p> 
-				<button class="btn btn-primary" type="button" id="append">Action</button>
 			</div>
-			<div class="api prepend col-xs-4 col-sm-4 col-md-4">
-				<p>.prepend( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="prepend">.prepend( )</button>
 			</div>
-			<div class="api attr col-xs-4 col-sm-4 col-md-4">
-				<p>.attr( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="attr">.attr( )</button>
 			</div>
-			<div class="api before col-xs-4 col-sm-4 col-md-4">
-				<p>.before( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="before">.before( )</button>
 			</div>
-			<div class="api html col-xs-4 col-sm-4 col-md-4">
-				<p>.html( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="html">.html( )</button>
 			</div>
-			<div class="api text col-xs-4 col-sm-4 col-md-4">
-				<p>.text( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="text">.text( )</button>
 			</div>
-			<div class="api val col-xs-4 col-sm-4 col-md-4">
-				<p>.val( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+			\
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="val">.val( )</button>
 			</div>
-		</div>
+
+		</div><!--end #manipulation div-->
 
 
 		<div class="jq row" id="events">
 		<h4>Events (functions to handle an event)</h4>
-			<div class="api click col-xs-4 col-sm-4 col-md-4">
-				<p>.click( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+		<div class="clickMe">Click Buttons for Action!!</div>
+		<br>
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="click">.click( )</button>
 			</div>
-			<div class="api on col-xs-4 col-sm-4 col-md-4">
-				<p>.on( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="on">.on( )</button>
 			</div>
-			<div class="api live col-xs-4 col-sm-4 col-md-4">
-				<p>.live( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="live">.live( )</button>
 			</div>
-			<div class="api hover col-xs-4 col-sm-4 col-md-4">
-				<p>.hover( )</p>
-				<button class="btn btn-primary" type="button">Action</button>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="hover">.hover( )</button>
 			</div>
+
 		</div>
 		
 	</div><!--end of container-fluid div-->

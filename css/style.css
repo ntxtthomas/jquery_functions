@@ -5,11 +5,16 @@
 #effects, #css, #manipulation, #events {
 	margin-top: 125px; 
 }
+.clickMe{font-style: italic;}
 .api {
 	border: 2px solid lightgrey;
 	border-radius: 1.5rem; 
 	text-align: center;
 	height: 20rem; 
+}
+.btn-primary {
+	width: 100%;
+	margin: 2rem auto; 
 }
 .dance {
 	width: 15%;
@@ -59,18 +64,11 @@
 	display: inline-block;
 	vertical-align: top;
 }
-.baco, .wacko {
+.baco {
 	width: 45%;
 	text-align: justify;
 	display: inline-block;
 	vertical-align: top;
-}
-.wackoBox, #after {
-	width: 35%; 
-	height: 125px; 
-	padding: 0 auto;
-	display: inline-block;
-	vertical-align: top; 
 }
 #ham, #bacon {
 	width: 55%;
@@ -89,15 +87,9 @@
 	display: inline-block;
 	vertical-align: top; 
 }
-.question{
+.question, .answer {
 	width: 45%; 
-	height: 30%;
-	display: inline-block;
-	vertical-align: top;  
-}
-.answer {
-	width: 45%; 
-	height: 30%;
+	text-align: left; 	
 	display: inline-block;
 	vertical-align: top;  
 }

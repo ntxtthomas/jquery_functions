@@ -34,7 +34,15 @@ $(document).ready(function(){
 		})
 	})
 	$("#after").click(function(){
-		$(".question").after("<p class='answer'>Because most don't C#</p>");
+		$(".question").after("<p class='answer'>Because most don't C#</p>").animate({
+		    width: [ "toggle", "swing" ],
+		    height: [ "toggle", "swing" ],
+		    opacity: "toggle"
+		  }, 5000, "linear", function() {
+		    $( this ).after( "<div>Because most don't C#!!</div>" );
+		
+		  });
+
 	})
 	$("#append").click(function(){
 		$(".magic").append("BLUE").css("color", "blue");
