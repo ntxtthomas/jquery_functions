@@ -20,10 +20,10 @@ $(document).ready(function(){
 		$(".up").slideDown("fast");
 		$(".down").slideDown("fast");
 	})
-	$("#bacon").click(function(){
+	$("#addClass").click(function(){
 		$(".bacon").addClass("pig");
 	})
-	$("#ham").click(function(){
+	$("#removeClass").click(function(){
 		$(".ham").removeClass();
 	})
 	$("#change").click(function(){
