@@ -2,11 +2,13 @@
 
 This is a basic refresher excercise to familiarize with the jQuery API. I've done this excericise a couple of times in the past already but wanted to do it again as a refresher AND to incorporate;
 
-Bootstrap
-Responsive Web Design
+Bootstrap (employing responsiveness, grids, table, form, and buttons)
+AJAX to reset the #jQuery div
+Responsive Web Design in general employing mediaQueries, breakPoints, etc..
 Font Awesome
 
 ...along with;  
+
 HTML
 CSS
 jQuery
@@ -34,3 +36,5 @@ Using Boostrap on Navbar.. when in mobile size the navBar toggles to a "hamburge
 
 Update: Did lots of cleanup on the layout.. looking better, but now the navBar toggle isn't working again.. going to bed
 Update: updated jQuery CDN to more current version and again loaded before bootstrap.. success, navBar toggle works.. on to Breakpoints,.. I'd also like to minimize the jQuery Function list and add other Bootstrap examples such as Table and Forms.
+
+Update: I've decided to make it look real world clean and minimize the noise. I've eliminated most of the jQuery functions and added excercises in Bootstrap Form and Boostrap Table. It's looking good.  
