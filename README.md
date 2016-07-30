@@ -33,3 +33,4 @@ LEARNING OPPORTUNITY
 Using Boostrap on Navbar.. when in mobile size the navBar toggles to a "hamburger" but was not working at after that. Did much research, tried many things.. in the end I loaded jQuery before Bootstrap, worked. Lots of time on that one. 
 
 Update: Did lots of cleanup on the layout.. looking better, but now the navBar toggle isn't working again.. going to bed
+Update: updated jQuery CDN to more current version and again loaded before bootstrap.. success, navBar toggle works.. on to Breakpoints,.. I'd also like to minimize the jQuery Function list and add other Bootstrap examples such as Table and Forms.
