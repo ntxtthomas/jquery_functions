@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="description"  content="Examples of jQuery API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQuery Functions</title>
+	<title>jQuery/Bootstrap Excercise</title>
 	<script src="https://use.fontawesome.com/19199cf98b.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -24,15 +24,15 @@
 					<span class="icon-bar"></span>				
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">jQuery Function Examples</a>
+				<a href="#" class="navbar-brand">jQuery/Bootstrap Excercise</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#effects">Effects</a></li>
-					<li><a href="#CSS">CSS</a></li>
-					<li><a href="#manipluation">Manipulation</a></li>
-					<li><a href="#events">Events</a></li>
+					<li class="active"><a href="#jQuery">jQuery</a></li>
+					<li><a href="#bsTable">Table</a></li>
+					<li><a href="#bsForm">Form</a></li>
+					<li><a href="#events">Form</a></li>
 				</ul>
 			</div><!--end of collapse div-->
 		</div><!-- end of container-fluid div -->
@@ -40,49 +40,29 @@
 
 	
 	<div class="container">
-		<div class="row" id="effects">
-		<h4>Effects (functions to do some cool animation effects)</h4>
+		<div class="row" id="jQuery">
+		<!-- going to modify #jQuery by using AJAX to reset it -->
+		<h4>jQuery Functions</h4>
 		<div class="clickMe">Click Buttons for Action!!</div>
 		<br>
-
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button">.show( )</button>
-			</div>
-
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button">.toggle( )</button>
-			</div>
-
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button">.slideDown( )</button>
-			</div>
-
 			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<button class="btn btn-primary" id="dancer" type="button">.slideToggle( )</button>
 				<img class="dance" src="img/dance.gif" alt="dance">
 			</div>
 			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<p>.fadeIn( ) / .fadeOut( )</p>
+				<button class="btn btn-primary" type="button">.fadeIn( ) / .fadeOut( )</button>
 				<img src="img/horse_races.gif" alt="horse" class="horse">
 				<button class="btn btn-danger" id="out" type="button">Out</button>
 				<button class="btn btn-success" id="in" type="button">In</button>
 			</div>
 			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<p>.slideUp( ) / .slideDown( )</p>
-				<button type="button" class="btn btn-link" id="reset">Reset</button>
+				<button class="btn btn-primary" type="button">.slideUp( ) / .slideDown( )</button>
+				<!-- <button type="button" class="btn btn-link" id="reset">Reset</button> -->
 				<img src="img/up.png" alt="up" class="up">
-				<button class="btn btn-info" id="up" type="button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 				<img src="img/down.png" alt="down" class="down">
+				<button class="btn btn-info" id="up" type="button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 				<button class="btn btn-warning" id="down" type="button"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
 			</div>
-		</div>
-
-
-
-		<div class="row" id="css">
-		<h4>CSS (adding or r col-xs- col-sm- col-md-removing a class for any HTML element/DOM)</h4>
-		<div class="clickMe">Click Buttons for Action!!</div>
-		<br>
 			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<button class="btn btn-primary" type="button" id="addClass">.addClass( )</button>
 				<p>Ham ground round alcatra jerky rump. <span class="bacon">Kevin frankfurter short ribs prosciutto tri-tip. Venison jerky capicola turducken swine.</span></p>
@@ -99,14 +79,6 @@
 				<div class="round"></div>
 			</div>
 
-		</div><!--end of #css div-->
-
-
-		<div class="row" id="manipulation">
-		<h4>Manipulation (retrieving or setting value or text in any HTML element)</h4>
-		<div class="clickMe">Click Buttons for Action!!</div>
-		<br>
-			
 			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<button class="btn btn-primary" type="button" id="after">.after( )</button>
 				<p class="question">Why do most Java developers wear glasses?</p>
@@ -123,52 +95,60 @@
 				<button class="btn btn-primary" type="button" id="prepend">.prepend( )</button>
 			</div>
 
+		</div>
 
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="attr">.attr( )</button>
+
+
+		<div class="row" id="bsTable">
+		<h4>Boostrap Table Example</h4>
+		<br>
+			
+
+		</div><!--end of #bsTable div-->
+
+
+		<div class="row" id="bsForm">
+		<h4>Boostrap Form Example</h4>
+		<br>
+			
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputFile">File input</label>
+				<input type="file" id="exampleInputFile">
+				<p class="help-block">Example block-level help text here.</p>
 			</div>
 
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="before">.before( )</button>
-			</div>
+			<label class="checkbox-inline">
+				<input type="checkbox" id="inlineCheckbox1" value="quartPage"> 1/4 page
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" id="inlineCheckbox2" value="halfPage"> 1/2 page
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" id="inlineCheckbox3" value="banner"> Banner
+			</label>
+			
+			<p><button type="submit" class="btn btn-primary">Placer Order</button></p>
+		</form>
+			
 
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="html">.html( )</button>
-			</div>
-
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="text">.text( )</button>
-			</div>
-			\
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="val">.val( )</button>
-			</div>
-
-		</div><!--end #manipulation div-->
+		</div><!--end #bsForm div-->
 
 
 		<div class="jq row" id="events">
 		<h4>Events (functions to handle an event)</h4>
-		<div class="clickMe">Click Buttons for Action!!</div>
 		<br>
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="click">.click( )</button>
-			</div>
-
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="on">.on( )</button>
-			</div>
-
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="live">.live( )</button>
-			</div>
-
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="hover">.hover( )</button>
-			</div>
-
 		</div>
-		
+
+	
 	</div><!--end of container-fluid div-->
 </body>
 </html>

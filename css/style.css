@@ -2,7 +2,7 @@
 .container-fluid {
 	width: 100%;
 }
-#effects, #css, #manipulation, #events {
+#jQuery, #bsForm, #bsTable, #events {
 	margin-top: 125px; 
 }
 .clickMe{font-style: italic;}
@@ -29,7 +29,7 @@
 	width: 30%;
 	margin-top: 1rem; 
 }
-#in, #out {
+#in, #out, #up, #down {
 	display: block;
 	float: left; 
 	margin: 1px 5px 5px 5px;
@@ -39,7 +39,7 @@
 	border-radius: 45px;
 	clear: both;
 }
-#up, #down {
+/*#up, #down {
 	display: block;
 	float: left; 
 	margin: 5px;
@@ -48,7 +48,7 @@
 	height: 50px;
 	border-radius: 45px;
 	clear: both;
-}
+}*/
 .up, .down {
 	width: 35%;
 	margin-top: 5px;
