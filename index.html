@@ -40,38 +40,53 @@
 
 	
 	<div class="container">
-		<div class="row" id="jQuery">
-		<!-- going to modify #jQuery by using AJAX to reset it -->
-		<h4>jQuery Functions</h4>
-		<div class="clickMe">Click Buttons for Action!!</div>
-		<br>
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" id="dancer" type="button">.slideToggle( )</button>
-				<img class="dance" src="img/dance.gif" alt="dance">
+			<div class="row" id="jQueryFun" originalClass="jQueryFun">
+			<div class="topWrap">
+				<!-- going to modify #jQuery by using AJAX to reset it, or, another solution -->
+				<h4>jQuery Functions</h4>
+				<div class="clickMe">Click Buttons for Action!!</div>
+				<br>
 			</div>
+		<a class="btn btn-default" href="#" id="reset" role="button">Reset</a>
+		<br>
+			
 			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<button class="btn btn-primary" type="button">.fadeIn( ) / .fadeOut( )</button>
 				<img src="img/horse_races.gif" alt="horse" class="horse">
 				<button class="btn btn-danger" id="out" type="button">Out</button>
 				<button class="btn btn-success" id="in" type="button">In</button>
 			</div>
+
 			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button">.slideUp( ) / .slideDown( )</button>
-				<!-- <button type="button" class="btn btn-link" id="reset">Reset</button> -->
-				<img src="img/up.png" alt="up" class="up">
+				<button class="btn btn-primary" id="dancer" type="button">.slideToggle( )</button>
+				<img class="dance" src="img/dance.gif" alt="dance">
+			</div>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button">.slideDown( )</button>
 				<img src="img/down.png" alt="down" class="down">
-				<button class="btn btn-info" id="up" type="button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 				<button class="btn btn-warning" id="down" type="button"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
 			</div>
+
 			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<button class="btn btn-primary" type="button" id="addClass">.addClass( )</button>
 				<p>Ham ground round alcatra jerky rump. <span class="bacon">Kevin frankfurter short ribs prosciutto tri-tip. Venison jerky capicola turducken swine.</span></p>
 			</div>
 
-
 			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<button class="btn btn-primary" type="button" id="removeClass">.removeClass( )</button>
 				<p>Ham ground round alcatra jerky rump. <span class="ham">Kevin frankfurter short ribs prosciutto tri-tip. Venison jerky capicola turducken swine.</span></p>
+			</div>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button">.slideUp( )</button>
+				<img src="img/up.png" alt="up" class="up">
+				<button class="btn btn-info" id="up" type="button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+			</div>
+
+			<div class="api col-xs-4 col-sm-4 col-md-4">
+				<button class="btn btn-primary" type="button" id="after">.after( )</button>
+				<p class="question">Why do most Java developers wear glasses?</p>
 			</div>
 
 			<div class="api col-xs-4 col-sm-4 col-md-4">
@@ -80,29 +95,49 @@
 			</div>
 
 			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="after">.after( )</button>
-				<p class="question">Why do most Java developers wear glasses?</p>
-			</div>
-
-
-			<div class="api col-xs-4 col-sm-4 col-md-4">
 				<button class="btn btn-primary" type="button" id="append">.append( )</button>
 				<p class="magic">The magic color is:</p> 
-			</div>
-
-
-			<div class="api col-xs-4 col-sm-4 col-md-4">
-				<button class="btn btn-primary" type="button" id="prepend">.prepend( )</button>
 			</div>
 
 		</div>
 
 
 
-		<div class="row" id="bsTable">
+		<div class="table" id="bsTable">
 		<h4>Boostrap Table Example</h4>
 		<br>
-			
+		<!--Add User Function Here-->
+			<table class="table table-bordered table-hover table-responsive">
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><!--hardcoded for now-->
+						<td>Sam</td>
+						<td>Phillips</td>
+						<td>sphillips@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Jill</td>
+						<td>Phillips</td>
+						<td>jphillips@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Fred</td>
+						<td>Iam</td>
+						<td>fiam@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Gina</td>
+						<td>Iam</td>
+						<td>giam@gmail.com</td>
+					</tr>
+				</tbody>
+			</table>
 
 		</div><!--end of #bsTable div-->
 
@@ -136,14 +171,14 @@
 				<input type="checkbox" id="inlineCheckbox3" value="banner"> Banner
 			</label>
 			
-			<p><button type="submit" class="btn btn-primary">Placer Order</button></p>
+			<p><button type="submit" class="btn btn-primary" id="order">Placer Order</button></p>
 		</form>
 			
 
 		</div><!--end #bsForm div-->
 
 
-		<div class="jq row" id="events">
+		<div class="row" id="events">
 		<h4>Events (functions to handle an event)</h4>
 		<br>
 		</div>

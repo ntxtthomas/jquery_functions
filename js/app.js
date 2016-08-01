@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	var modFun = $("#jQueryFun").clone();// block not doing what I want it to do
+	$("#reset").click(function(){
+		$("#jQueryFun").replaceWith("modFun");
+
+	})
 	$("#dancer").click(function(){
 		$(".dance").slideToggle("slow");
 	})
@@ -10,15 +15,12 @@ $(document).ready(function(){
 		$(".horse").fadeIn("slow");
 	})
 	$("#up").click(function(){
-		$(".up").slideUp("fast");
-		$(".down").slideUp("fast");
+		$(".up").slideUp("slow");
+		$(".down").slideUp("slow");
 	})
 	$("#down").click(function(){
-		$(".down").slideDown("fast");
-	})
-	$("#reset").click(function(){
-		$(".up").slideDown("fast");
-		$(".down").slideDown("fast");
+		$(".up").slideDown("slow"); 
+		$(".down").slideDown("slow");
 	})
 	$("#addClass").click(function(){
 		$(".bacon").addClass("pig");
@@ -40,14 +42,10 @@ $(document).ready(function(){
 		    opacity: "toggle"
 		  }, 5000, "linear", function() {
 		    $( this ).after( "<div>Because most don't C#!!</div>" );
-		
+	
 		  });
-
 	})
 	$("#append").click(function(){
-		$(".magic").append("BLUE").css("color", "blue");
+		$(".magic").append(" BLUE").css("color", "blue");
 	})
-	
-	
-
 });

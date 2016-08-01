@@ -2,10 +2,21 @@
 .container-fluid {
 	width: 100%;
 }
-#jQuery, #bsForm, #bsTable, #events {
+#jQueryFun, #bsForm, #bsTable, #events {
 	margin-top: 125px; 
 }
-.clickMe{font-style: italic;}
+.topWrap {
+	width: 50rem;
+	display: inline-block;
+	vertical-align: bottom;
+}
+#reset {
+	float: right;
+	clear: both;
+}
+.clickMe {
+	font-style: italic;
+}
 .api {
 	border: 2px solid lightgrey;
 	border-radius: 1.5rem; 
@@ -17,14 +28,9 @@
 	margin: 2rem auto; 
 }
 .dance {
-	width: 15%;
+	width: 20%;
 	margin-top: 1rem; 
-
 }
-/*button {
-	float: right;
-	margin: 80% 10% 10% 80%;
-}*/
 .horse {
 	width: 30%;
 	margin-top: 1rem; 
@@ -32,43 +38,23 @@
 #in, #out, #up, #down {
 	display: block;
 	float: left; 
-	margin: 1px 5px 5px 5px;
+	margin: 1em;
 	text-align: center;
 	width: 50px; 
 	height: 50px;
-	border-radius: 45px;
+	border-radius: 45px;`
 	clear: both;
 }
-/*#up, #down {
-	display: block;
-	float: left; 
-	margin: 5px;
-	text-align: center;
-	width: 50px; 
-	height: 50px;
-	border-radius: 45px;
-	clear: both;
-}*/
-.up, .down {
-	width: 35%;
-	margin-top: 5px;
+.up {
+	width: 40%;
+}
+.down {
+	width: 30%;
+	margin-top: 1.5rem; 
 }
 .ham {
 	font-weight: 600;
 	color: green; 
-}
-.bacBox{
-	width: 35%; 
-	height: 125px; 
-	padding: 0 auto;
-	display: inline-block;
-	vertical-align: top;
-}
-.baco {
-	width: 45%;
-	text-align: justify;
-	display: inline-block;
-	vertical-align: top;
 }
 #ham, #bacon {
 	width: 55%;
@@ -93,9 +79,16 @@
 	display: inline-block;
 	vertical-align: top;  
 }
-/*.magic {
-	font-size: 2rem;
-}*/
-
+#bsTable {
+	margin-top: 225px; 
+	max-width: 75%;
+}
+#bsForm {
+	margin-top: 225px; 
+	max-width: 35%;
+}
+#order {
+	max-width: 35%; 
+}
 
 
